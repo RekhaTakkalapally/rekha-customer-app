@@ -18,7 +18,7 @@ pipeline {
         NEXUS_REPOSITORY = "rekha-SNAPSHOT"
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "nexus"
-		SCANNER_HOME = tool 'sonarqube
+		SCANNER_HOME = tool 'sonarqube'
     }
     stages {
         stage("clone code") {
