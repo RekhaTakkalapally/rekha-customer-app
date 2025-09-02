@@ -33,13 +33,6 @@ public class InsertCustomerServlet extends HttpServlet{
             //will be available in the Welcome.jsp page
             request.setAttribute("cust",customer);
             dispatcher.forward(request, response);
-            SimpleCustomerApp/
- ├── src/main/java/com/room/sample/servlet/InsertCustomerServlet.java
- ├── src/main/java/com/room/sample/view/Customer.java
- ├── src/main/webapp/Customer.jsp
- ├── src/main/webapp/Welcome.jsp
- └── src/main/webapp/WEB-INF/web.xml   (if no @WebServlet)
-
            
         } catch (Exception e) {
             e.printStackTrace();
