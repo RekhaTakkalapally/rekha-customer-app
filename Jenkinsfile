@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com//sabear_simplecutomerapp.git';
+                    git 'https://github.com/RekhaTakkalapally/rekha-customer-app.git';
                 }
             }
         }
