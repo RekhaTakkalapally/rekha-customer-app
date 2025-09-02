@@ -82,7 +82,7 @@ pipeline {
         }
 		stage("Deploy to container") {
             steps {
-                    deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'customer-app', path: '', url: 'http://3.81.60.17:8080')], contextPath: null, war: '**/*.war'
+            deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'customer-app', path: '', url: 'http://3.81.60.17:8080')], contextPath: null, war: '**/*.war'
             }
         }
     }
