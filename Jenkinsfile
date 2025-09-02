@@ -82,11 +82,7 @@ pipeline {
         }
 		stage("Deploy to container") {
             steps {
-                script {
-                    // If you are using Windows then you should use "bat" step
-                    // Since unit testing is out of the scope we skip them
-                    deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'customer-app', path: '', url: 'http://3.81.60.17:8080/')], contextPath: null, war: '**/*.war'
-                }
+                    deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'customer-app', path: '', url: 'http://3.81.60.17:8080')], contextPath: null, war: '**/*.war'
             }
         }
     }
